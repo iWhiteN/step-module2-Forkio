@@ -1,0 +1,32 @@
+.revEditor{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 130px auto;
+	text-align: center;
+	font-family: Lato, Courier;
+	font-weight: bolder;
+
+	&__title{
+		color: #635c73;
+		text-transform: uppercase;
+		font-size: 39px;
+		margin-bottom: 40px;
+	}
+	&__subtitle{
+		color: #5b5b5b;
+		font-size: 15px;
+		margin-bottom: 40px;
+	}
+
+	.buttons{
+		list-style: none;
+		display: block;
+	
+		&__button{
+			display: inline-block;
+		}
+	}
+}
+
+
