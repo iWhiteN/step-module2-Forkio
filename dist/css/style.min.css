@@ -576,8 +576,12 @@ textarea {
     color: #5b5b5b;
     font-size: 15px;
     margin-bottom: 40px; }
-  .revEditor .buttons {
+  .revEditor__buttons {
     list-style: none;
-    display: block; }
-    .revEditor .buttons__button {
-      display: inline-block; }
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap; }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      .revEditor__buttons {
+        max-width: 240px;
+        justify-content: center; } }

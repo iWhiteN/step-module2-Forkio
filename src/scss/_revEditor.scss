@@ -6,7 +6,7 @@
 	text-align: center;
 	font-family: Lato, Courier;
 	font-weight: bolder;
-
+	
 	&__title{
 		color: #635c73;
 		text-transform: uppercase;
@@ -19,12 +19,15 @@
 		margin-bottom: 40px;
 	}
 
-	.buttons{
+	&__buttons{
 		list-style: none;
-		display: block;
-	
-		&__button{
-			display: inline-block;
+		display: flex;
+		margin: 0 auto;
+		flex-wrap: wrap;
+
+		@media screen and (min-width: 320px) and (max-width: 480px) {
+			max-width: 240px;
+			justify-content: center;
 		}
 	}
 }
