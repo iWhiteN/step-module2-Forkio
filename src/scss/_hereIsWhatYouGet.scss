@@ -99,8 +99,9 @@
 
 		@media screen and (min-width: 320px) and (max-width: 480px) {
 			order: 1;
-			bottom: -480px;
+			bottom: -400px;
 			left: 0px;
+			height: 380px;
 		}
 		@media screen and (min-width: 481px) and (max-width: 992px){
 			order: 1;
