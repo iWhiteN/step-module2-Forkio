@@ -5,13 +5,13 @@
 	max-height: 710px;
 	flex-wrap: wrap;
 	position: relative;
-	background-color: #fafafa;
+	background-color: #f4f4f4;
 
 	@media screen and (min-width: 320px) and (max-width: 480px) {
 			align-items: center;
 			flex-wrap: nowrap;
 			max-height: none;
-			padding-top: 35px;
+			padding-top: 35px; 
 	}
 	@media screen and (min-width: 481px) and (max-width: 992px){
 			align-items: center;

@@ -615,7 +615,7 @@ textarea {
   max-height: 710px;
   flex-wrap: wrap;
   position: relative;
-  background-color: #fafafa; }
+  background-color: #f4f4f4; }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .hereIsWhatYouGet {
       align-items: center;
