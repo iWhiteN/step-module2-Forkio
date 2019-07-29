@@ -621,13 +621,15 @@ textarea {
       align-items: center;
       flex-wrap: nowrap;
       max-height: none;
-      padding-top: 35px; } }
+      padding-top: 35px;
+      overflow: hidden; } }
   @media screen and (min-width: 481px) and (max-width: 992px) {
     .hereIsWhatYouGet {
       align-items: center;
       flex-wrap: nowrap;
       max-height: none;
-      padding-top: 55px; } }
+      padding-top: 55px;
+      overflow: hidden; } }
   .hereIsWhatYouGet .features {
     max-width: 500px;
     min-width: 320px;
@@ -692,11 +694,11 @@ textarea {
     @media screen and (min-width: 320px) and (max-width: 480px) {
       .hereIsWhatYouGet__img {
         order: 1;
-        bottom: -400px;
-        left: 0px;
-        height: 380px; } }
+        position: static;
+        height: 380px;
+        margin-left: 365px; } }
     @media screen and (min-width: 481px) and (max-width: 992px) {
       .hereIsWhatYouGet__img {
         order: 1;
-        bottom: -480px;
-        left: 0px; } }
+        position: static;
+        margin-left: 365px; } }
