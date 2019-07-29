@@ -688,8 +688,9 @@ textarea {
     @media screen and (min-width: 320px) and (max-width: 480px) {
       .hereIsWhatYouGet__img {
         order: 1;
-        bottom: -480px;
-        left: 0px; } }
+        bottom: -400px;
+        left: 0px;
+        height: 380px; } }
     @media screen and (min-width: 481px) and (max-width: 992px) {
       .hereIsWhatYouGet__img {
         order: 1;
