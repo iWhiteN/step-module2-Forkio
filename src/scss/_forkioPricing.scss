@@ -1,0 +1,144 @@
+.forkioPricing{
+	background-image: url(C:/Users/Юра/Desktop/step-module2-Forkio/src/img/pricing-bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #4b3b4e;
+	text-align: center;
+	font-family: Montserrat, Courier;
+	padding-top: 80px;
+
+	@media screen and (min-width: 320px) and (max-width: 480px) {
+        background-color: #4b3b4e;
+    }
+    @media screen and (min-width: 481px) and (max-width: 992px) {
+    	background-color: #4b3b4e;
+        background-position: bottom;
+    }
+
+	&__title{
+		color: white;
+		font-weight: 700;
+		font-size: 46px;
+		margin: 0 auto 70px;
+
+		@media screen and (min-width: 320px) and (max-width: 480px) {
+        	font-size: 26px;
+        	margin: 0 auto 50px;
+    	}
+    	@media screen and (min-width: 481px) and (max-width: 992px) {
+        	font-size: 40px;
+        	margin: 0 auto 50px;
+        	min-width: 572px;
+    	}
+	}
+	&__prices{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+
+		@media screen and (min-width: 320px) and (max-width: 480px) {
+        	flex-direction: column;
+       	}
+    	@media screen and (min-width: 481px) and (max-width: 992px) {
+    		flex-wrap: wrap;
+    		max-width: 570px;
+    		justify-content: space-around;
+    	}
+
+		.price-card{
+			min-width: 257px;
+			background-color: rgba(250,250,250, 0.1);
+			box-shadow: inset 0px 100px 1px rgba(250,250,250, 0.1);
+			color: white;
+			text-transform: uppercase;
+			padding: 45px 0 40px;
+			max-height: 460px;
+			
+			@media screen and (min-width: 320px) and (max-width: 480px) {
+        		margin-bottom: 15px;
+       		}
+    		@media screen and (min-width: 481px) and (max-width: 992px) {
+        		margin-bottom: 40px;
+    		}
+
+			&__name{
+				margin-bottom: 65px;
+				font-size: 22px;
+			}
+
+			&__cost{
+				font-size: 55px;
+				font-weight: 700;
+			}
+			h3{
+				color: #8c7d86;
+				font-size: 14px;
+				margin: 25px 0 40px;
+			}
+			&__line{
+				width: 60px;
+				height: 5px;
+				background-color: #8d81ac;
+				margin: 0 auto 30px;
+			}
+			h2{
+				text-transform: none;
+				margin-top: 15px;
+			}
+			&__button{
+				margin-top: 37px;
+				display: inline-block;
+				text-decoration: none;
+				color: white;
+				font-size: 14px;
+				padding: 15px 37px;
+				background-color: #7f707f;
+				border-radius: 97px;
+				outline: none;
+			}
+			&__button:hover{
+				background-color: #d0cbd0;
+				color: #7f6d78;
+				font-weight: 700;
+			}
+
+			.first{
+				margin: 68px auto auto;
+			}	
+		}
+		.active{
+			min-width: 300px;
+			height: 560px;
+			padding: 50px 0 50px;
+			background-color: rgba(0,0,0, 0.2);
+			box-shadow: inset 0px 100px 1px rgba(0,0,0, 0.1);
+			color: #e3e3e3;
+
+			@media screen and (min-width: 320px) and (max-width: 480px) {
+        		
+       		}
+    		@media screen and (min-width: 481px) and (max-width: 992px) {
+
+    		}
+
+			&__name{
+				margin-bottom: 60px;
+			}
+			&__cost{
+				font-size: 75px;
+			}
+			h3{
+				margin-bottom: 50px;
+			}
+			&__line{
+				margin-bottom: 40px;
+			}
+			&__button{
+				margin-top: 82px;
+				padding: 20px 50px;
+			}
+		}
+	}
+}
