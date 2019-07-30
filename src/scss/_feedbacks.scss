@@ -1,0 +1,95 @@
+.feedbacks {
+    padding-top: 98px;
+    background-image: url('/dist/img/feedback-bg.png');
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+        padding-top: 61px;
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 992px) {
+        padding-top: 80px;
+    }
+
+    &__wrapper {
+        text-align: center;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 64%;
+            height: 2px;
+            background-color: #635766;
+            margin-top: 15px;
+
+            @media screen and (min-width: 320px) and (max-width: 480px) {
+                width: 100%;
+            }
+        
+            @media screen and (min-width: 481px) and (max-width: 992px) {
+                width: 90%;
+            }
+        }
+    }
+}
+
+.feedbacks-items {
+    margin: 85px 0 85px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 95px;
+    grid-row-gap: 80px;
+
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+        margin: 40px 0 44px;
+        grid-template-columns: 1fr;
+        grid-row-gap: 63px;
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 992px) {
+        margin: 85px 0 45px;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 50px;
+        grid-column-gap: 95px;
+    }
+}
+
+.feedbacks-item {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+
+    &__description {
+        margin-top: 10px;
+        font-family: Lato, Courier;
+        font-size: 16px;
+        font-weight: 700;
+        font-style: italic;
+        line-height: 1.5;
+        color: #FFFFFF
+    }
+}
+
+.feedbacks-footer {
+    font-family: Lato, Courier;
+    font-size: 14px;
+    font-weight: 400;
+    color: #A291A5;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    line-height: 1.4;
+    opacity: 0.8;
+
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 992px) {
+        width: 87%;
+    }
+}
