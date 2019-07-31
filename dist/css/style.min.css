@@ -3,7 +3,7 @@
    v2.0-modified | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Lato:700,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:700,700i,400&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -114,17 +114,14 @@ html {
   /* 2 */ }
 
 /**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-a:focus {
-  outline: thin dotted; }
-
-/**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 a:active,
-a:hover {
-  outline: 0; }
+a:hover,
+a:focus {
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent; }
 
 /**
  * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
@@ -384,20 +381,19 @@ textarea {
   @media screen and (min-width: 481px) and (max-width: 992px) {
     .header-top {
       padding: 20px 0; } }
-  .header-top .wrapper {
+  .header-top__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center; }
     @media screen and (min-width: 481px) and (max-width: 992px) {
-      .header-top .wrapper {
+      .header-top__wrapper {
         flex-wrap: wrap; } }
 
 .logo {
   display: flex;
   align-items: center;
   text-decoration: none;
-  justify-self: flex-start;
-  outline: none; }
+  justify-self: flex-start; }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .logo {
       order: -2; } }
@@ -418,15 +414,9 @@ textarea {
   .logo__icon {
     transition: .2s; }
   .logo:hover .logo__title {
-    color: #FFFFFF;
-    outline: none; }
+    color: #FFFFFF; }
   .logo:hover .logo__icon {
-    filter: brightness(200%);
-    outline: none; }
-  .logo:hover {
-    outline: none;
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-    -webkit-tap-highlight-color: transparent; }
+    filter: brightness(200%); }
 
 .menu {
   margin-left: auto; }
@@ -471,10 +461,7 @@ textarea {
     .menu__item:first-child {
       margin-left: 0; }
     .menu__item:hover {
-      color: #FFFFFF;
-      outline: none;
-      -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-      -webkit-tap-highlight-color: transparent; }
+      color: #FFFFFF; }
   .menu__btn-mobile {
     display: none; }
     @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -482,33 +469,15 @@ textarea {
         display: inline-block;
         filter: brightness(400%); } }
 
-.buy-btn {
-  font-family: Montserrat, Courier;
-  font-weight: 700;
-  font-size: 16px;
-  color: #8D81AC;
-  margin-left: 48px;
-  text-decoration: none;
-  transition: .2s;
-  padding: 12px 35px;
-  background-color: #8D81AC;
-  color: #FFFFFF;
-  border-radius: 25px; }
+.buy-button {
+  margin-left: 48px; }
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    .buy-btn {
-      font-size: 15px;
-      padding: 12px 24px;
+    .buy-button {
       margin-left: 0;
       order: -1; } }
   @media screen and (min-width: 481px) and (max-width: 992px) {
-    .buy-btn {
+    .buy-button {
       order: -1; } }
-  .buy-btn:hover {
-    background-color: #FFFFFF;
-    color: #8D81AC;
-    outline: none;
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-    -webkit-tap-highlight-color: transparent; }
 
 .header-main {
   background: url("../img/header-main-bg.png") no-repeat;
@@ -525,72 +494,47 @@ textarea {
   @media screen and (min-width: 481px) and (max-width: 992px) {
     .header-main {
       padding-top: 50px; } }
-
-.title {
-  font-family: Montserrat, Courier;
-  font-weight: 700;
-  font-size: 60px;
-  color: #FFFFFF; }
-  @media screen and (min-width: 320px) and (max-width: 480px) {
-    .title {
-      font-size: 35px; } }
-  @media screen and (min-width: 481px) and (max-width: 992px) {
-    .title {
-      font-size: 53px; } }
-  .title__subtitle {
-    margin-top: 18px;
-    font-family: Montserrat, Courier;
-    font-weight: 400;
-    font-size: 22px;
-    color: #8D81AC; }
+  .header-main__title {
+    font-size: 60px; }
     @media screen and (min-width: 320px) and (max-width: 480px) {
-      .title__subtitle {
-        margin-top: 20px;
-        font-size: 13px; } }
+      .header-main__title {
+        font-size: 35px; } }
     @media screen and (min-width: 481px) and (max-width: 992px) {
-      .title__subtitle {
-        margin-top: 26px;
-        font-size: 18px; } }
-  .title__description {
-    margin-top: 18px;
-    font-family: Montserrat, Courier;
-    font-weight: 400;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #848E97; }
-    @media screen and (min-width: 481px) and (max-width: 992px) {
-      .title__description {
-        margin-top: 20px;
-        font-size: 10px; } }
+      .header-main__title {
+        font-size: 53px; } }
+
+.subtitle {
+  margin-top: 18px;
+  font-family: Montserrat, Courier;
+  font-weight: 400;
+  font-size: 22px;
+  color: #8D81AC; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .subtitle {
+      margin-top: 20px;
+      font-size: 13px; } }
+  @media screen and (min-width: 481px) and (max-width: 992px) {
+    .subtitle {
+      margin-top: 26px;
+      font-size: 18px; } }
+
+.description {
+  margin-top: 18px;
+  font-family: Montserrat, Courier;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #848E97; }
+  @media screen and (min-width: 481px) and (max-width: 992px) {
+    .description {
+      margin-top: 20px;
+      font-size: 10px; } }
 
 .download {
   position: absolute;
   top: calc(100% - 30px);
   left: 0;
   right: 0; }
-  .download__btn {
-    display: inline-block;
-    padding: 23px 63px;
-    font-family: Montserrat, Courier;
-    font-weight: 700;
-    font-size: 15px;
-    color: #FFFFFF;
-    background-color: #8D81AC;
-    border-radius: 50px;
-    text-decoration: none;
-    border: 1px solid transparent;
-    transition: .2s; }
-    @media screen and (min-width: 320px) and (max-width: 480px) {
-      .download__btn {
-        font-size: 13px;
-        padding: 15px 30px; } }
-    .download__btn:hover {
-      background-color: #FFFFFF;
-      color: #8D81AC;
-      border: 1px solid #8D81AC;
-      outline: none;
-      -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-      -webkit-tap-highlight-color: transparent; }
   .download__description {
     margin-top: 19px;
     font-family: Montserrat, Courier;
@@ -600,6 +544,12 @@ textarea {
     @media screen and (min-width: 320px) and (max-width: 480px) {
       .download__description {
         margin-top: 13px; } }
+
+.download-button {
+  padding: 23px 63px; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .download-button {
+      padding: 15px 30px; } }
 
 .revEditor {
   display: flex;
