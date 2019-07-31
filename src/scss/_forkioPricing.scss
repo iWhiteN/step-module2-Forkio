@@ -7,13 +7,16 @@
 	text-align: center;
 	font-family: Montserrat, Courier;
 	padding-top: 80px;
+	padding-bottom: 100px;
 
 	@media screen and (min-width: 320px) and (max-width: 480px) {
         background-color: #4b3b4e;
+		padding-bottom: 90px;
     }
     @media screen and (min-width: 481px) and (max-width: 992px) {
     	background-color: #4b3b4e;
         background-position: bottom;
+        padding-bottom: 80px;
     }
 
 	&__title{
