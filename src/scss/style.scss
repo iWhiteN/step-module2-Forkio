@@ -2,7 +2,7 @@
 @import '_reset.scss';
 
 // VARS
-@import '_vars.scss';
+@import '_basic.scss';
 
 // FONTS
 @import '_fonts.scss';
@@ -15,6 +15,9 @@
 
 // HERE IS WHAT YOU GET
 @import '_hereIsWhatYouGet.scss';
+
+// FEEDBACKS
+@import '_feedbacks.scss';
 
 // FORKIO PRICING
 @import '_forkioPricing.scss';
