@@ -6,7 +6,7 @@
 ### Contributors
 - Roman Loboda & Yuriy Lastivka
 
-###Tasks
+### Tasks
 1.  Roman Loboda
 2.  Yuriy Lastivka
 
