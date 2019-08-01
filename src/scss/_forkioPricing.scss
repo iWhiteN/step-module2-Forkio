@@ -20,14 +20,13 @@
     }
 
 	&__title{
-		color: white;
-		font-weight: 700;
 		font-size: 46px;
 		margin: 0 auto 70px;
 
 		@media screen and (min-width: 320px) and (max-width: 480px) {
         	font-size: 26px;
         	margin: 0 auto 50px;
+			line-height: 1;
     	}
     	@media screen and (min-width: 481px) and (max-width: 992px) {
         	font-size: 40px;
@@ -92,19 +91,19 @@
 			}
 			&__button{
 				margin-top: 37px;
-				display: inline-block;
-				text-decoration: none;
-				color: white;
 				font-size: 14px;
 				padding: 15px 37px;
 				background-color: #7f707f;
-				border-radius: 97px;
-				outline: none;
 			}
 			&__button:hover{
 				background-color: #d0cbd0;
 				color: #7f6d78;
 				font-weight: 700;
+
+				@media screen and (min-width:320px) and (max-width:480px){
+					font-size: 14px;
+					padding: 15px 37px;
+				}
 			}
 
 			.first{

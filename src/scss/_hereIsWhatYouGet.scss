@@ -1,29 +1,28 @@
-.hereIsWhatYouGet-bg{
-	background-color: #f4f4f4;
-}
 .hereIsWhatYouGet{
-	font-family: Montserrat, Courier;
-	display: flex;
-	flex-direction: column;
-	max-height: 710px;
-	flex-wrap: wrap;
-	position: relative;
 	background-color: #f4f4f4;
-    
 
-	@media screen and (min-width: 320px) and (max-width: 480px) {
+	&__wrapper{
+		font-family: Montserrat, Courier;
+		display: flex;
+		flex-direction: column;
+		max-height: 710px;
+		flex-wrap: wrap;
+		position: relative;
+
+		@media screen and (min-width: 320px) and (max-width: 480px) {
 			align-items: center;
 			flex-wrap: nowrap;
 			max-height: none;
-			padding-top: 35px; 
+			padding-top: 35px;
 			overflow: hidden;
-	}
-	@media screen and (min-width: 481px) and (max-width: 992px){
+		}
+		@media screen and (min-width: 481px) and (max-width: 992px){
 			align-items: center;
 			flex-wrap: nowrap;
 			max-height: none;
 			padding-top: 55px;
 			overflow: hidden;
+		}
 	}
 
 	.features{
@@ -82,16 +81,15 @@
 		padding-top: 65px;
 		color: #8d81ac;
 		text-transform: uppercase;
-		font-size: 35px;
-		font-weight: 700;
 
 		@media screen and (min-width: 320px) and (max-width: 480px) {
+			line-height: 1;
 			order: -1;
 			padding-top: 0;
 			font-size: 23px;
 			text-align: center;
 		}
-		@media screen and (min-width: 481px) and (max-width: 992px){
+		@media screen and (min-width: 481px) and (max-width: 992px) {
 			order: -1;
 			padding-top: 0;
 			font-size: 30px;
