@@ -12,6 +12,13 @@ $default-color: #FFFFFF;
 $montserrat-font: Montserrat, Courier;
 $lato-font: Lato, Courier;
 
+@mixin for-phone-only {
+    @media (max-width: 480px) { @content; }
+}
+@mixin for-tablet-only {
+    @media (max-width: 992px) { @content; }
+}
+
 .title {
     font-family: Montserrat, Courier;
     font-size: 35px;
@@ -19,11 +26,11 @@ $lato-font: Lato, Courier;
     color: $default-color;
     text-align: center;
 
-    @media screen and (min-width: 320px) and (max-width: 480px) {
+    @include for-phone-only {
         line-height: 1.3;
     }
 
-    @media screen and (min-width: 481px) and (max-width: 992px) {
+    @include for-tablet-only {
        font-size: 31px;
     }
 }
@@ -43,7 +50,7 @@ $lato-font: Lato, Courier;
     border: 1px solid transparent;
     transition: .2s;
 
-    @media screen and (min-width: 320px) and (max-width: 480px) {
+    @include for-phone-only {
         font-size: 13px;
         padding: 12px 24px;
     }
