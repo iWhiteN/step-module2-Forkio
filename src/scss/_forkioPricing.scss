@@ -3,35 +3,35 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: #4b3b4e;
+	background-color: $pricing-color;
 	text-align: center;
-	font-family: Montserrat, Courier;
+	font-family: $montserrat-font;
 	padding-top: 80px;
 	padding-bottom: 100px;
 
-	@media screen and (min-width: 320px) and (max-width: 480px) {
-        background-color: #4b3b4e;
-		padding-bottom: 90px;
-    }
-    @media screen and (min-width: 481px) and (max-width: 992px) {
-    	background-color: #4b3b4e;
+	@include for-tablet-max {
         background-position: bottom;
         padding-bottom: 80px;
+    }
+
+	@include for-phone-max {
+		background-position: center;
+		padding-bottom: 90px;
     }
 
 	&__title{
 		font-size: 46px;
 		margin: 0 auto 70px;
-
-		@media screen and (min-width: 320px) and (max-width: 480px) {
-        	font-size: 26px;
-        	margin: 0 auto 50px;
-			line-height: 1;
-    	}
-    	@media screen and (min-width: 481px) and (max-width: 992px) {
+		
+		@include for-tablet-max {
         	font-size: 40px;
         	margin: 0 auto 50px;
         	min-width: 572px;
+    	}
+
+		@include for-phone-max {
+        	font-size: 26px;
+			line-height: 1;
     	}
 	}
 	&__prices{
@@ -40,30 +40,35 @@
 		align-items: center;
 		margin: 0 auto;
 
-		@media screen and (min-width: 320px) and (max-width: 480px) {
-        	flex-direction: column;
-       	}
-    	@media screen and (min-width: 481px) and (max-width: 992px) {
+		@include for-tablet-max {
     		flex-wrap: wrap;
     		max-width: 570px;
     		justify-content: space-around;
     	}
 
+		@include for-phone-max {
+			flex-wrap: nowrap;
+			max-width: auto;
+			flex-direction: column;
+			justify-content: space-between;
+       	}
+
 		.price-card{
 			min-width: 257px;
 			background-color: rgba(250,250,250, 0.1);
 			box-shadow: inset 0px 100px 1px rgba(250,250,250, 0.1);
-			color: white;
+			color: $default-color;
 			text-transform: uppercase;
 			padding: 45px 0 40px;
 			max-height: 460px;
-			
-			@media screen and (min-width: 320px) and (max-width: 480px) {
-        		margin-bottom: 15px;
-       		}
-    		@media screen and (min-width: 481px) and (max-width: 992px) {
+
+			@include for-tablet-max {
         		margin-bottom: 40px;
     		}
+			
+			@include for-phone-max {
+        		margin-bottom: 15px;
+       		}
 
 			&__name{
 				margin-bottom: 65px;
@@ -82,7 +87,7 @@
 			&__line{
 				width: 60px;
 				height: 5px;
-				background-color: #8d81ac;
+				background-color: $brand-color;
 				margin: 0 auto 30px;
 			}
 			h2{
@@ -100,7 +105,7 @@
 				color: #7f6d78;
 				font-weight: 700;
 
-				@media screen and (min-width:320px) and (max-width:480px){
+				@include for-phone-max {
 					font-size: 14px;
 					padding: 15px 37px;
 				}
