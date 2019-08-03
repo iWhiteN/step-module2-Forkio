@@ -41,7 +41,7 @@
         font-family: Lato, Courier;
         font-weight: 700;
         font-size: 24px;
-        color: #8D81AC;
+        color: $brand-color;
         text-transform: uppercase;
         margin-left: 17px;
         transition: .2s;
@@ -98,7 +98,7 @@
         font-family: Montserrat, Courier;
         font-weight: 700;
         font-size: 16px;
-        color: #8D81AC;
+        color: $brand-color;
         margin-left: 48px;
         text-decoration: none;
         transition: .2s;
@@ -112,7 +112,7 @@
             border-bottom: 1px solid #3B3B3B;
             
             &--mobile-active {
-                color: #8D81AC;
+                color: $brand-color;
             }
         }
 
@@ -184,7 +184,7 @@
     font-family: Montserrat, Courier;
     font-weight: 400;
     font-size: 22px;
-    color: #8D81AC;
+    color: $brand-color;
     @media screen and (min-width: 320px) and (max-width: 480px) {
         margin-top: 20px;
         font-size: 13px;
