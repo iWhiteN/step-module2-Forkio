@@ -30,6 +30,7 @@
     	}
 
 		@include for-phone-max {
+			min-width: auto;
         	font-size: 26px;
 			line-height: 1;
     	}
