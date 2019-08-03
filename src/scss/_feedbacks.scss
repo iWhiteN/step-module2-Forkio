@@ -4,12 +4,12 @@
     background-size: cover;
     background-position: center;
 
-    @include for-phone-only {
-        padding-top: 61px;
+    @include for-tablet-max {
+        padding-top: 80px;
     }
 
-    @include for-tablet-only {
-        padding-top: 80px;
+    @include for-phone-max {
+        padding-top: 61px;
     }
 
     &__wrapper {
@@ -23,12 +23,12 @@
             background-color: #635766;
             margin-top: 15px;
 
-            @include for-phone-only {
-                width: 100%;
-            }
-        
-            @include for-tablet-only {
+            @include for-tablet-max {
                 width: 90%;
+            }
+
+            @include for-phone-max {
+                width: 100%;
             }
         }
     }
@@ -42,17 +42,18 @@
     grid-column-gap: 95px;
     grid-row-gap: 80px;
 
-    @include for-phone-only {
-        margin: 40px 0 44px;
-        grid-template-columns: 1fr;
-        grid-row-gap: 63px;
-    }
-
-    @include for-tablet-only {
+    @include for-tablet-max {
         margin: 85px 0 45px;
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 50px;
         grid-column-gap: 95px;
+    }
+
+    @include for-phone-max {
+        margin: 40px 0 44px;
+        grid-template-columns: 1fr;
+        grid-row-gap: 63px;
+        grid-column-gap: normal;
     }
 }
 
@@ -85,11 +86,12 @@
     line-height: 1.4;
     opacity: 0.8;
 
-    @include for-phone-only {
-        display: none;
+    @include for-tablet-max {
+        width: 87%;
     }
 
-    @include for-tablet-only {
-        width: 87%;
+    @include for-phone-max {
+        display: none;
+        width: 75%;
     }
 }
