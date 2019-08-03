@@ -6,6 +6,8 @@
     padding: 0 10px;
 }
 
+$brand-color: #8d81ac;
+
 .title {
     font-family: Montserrat, Courier;
     font-size: 35px;
@@ -27,11 +29,11 @@
     font-family: Montserrat, Courier;
     font-weight: 700;
     font-size: 16px;
-    color: #8D81AC;
+    color: $brand-color;
     text-decoration: none;
     transition: .2s;
     padding: 12px 35px;
-    background-color: #8D81AC;
+    background-color: $brand-color;
     color: #FFFFFF;
     border-radius: 50px;
     border: 1px solid transparent;
@@ -44,8 +46,8 @@
 
     &:hover {
         background-color: #FFFFFF;
-        color: #8D81AC;
-        border-color: #8D81AC;  
+        color: $brand-color;
+        border-color: $brand-color;  
         outline: none;
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
         -webkit-tap-highlight-color: transparent; 
