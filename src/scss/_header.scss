@@ -38,7 +38,7 @@
     }
     
     &__title {
-        font-family: Lato, Courier;
+        font-family: $lato-font;
         font-weight: 700;
         font-size: 24px;
         color: $brand-color;
@@ -56,7 +56,7 @@
     }
 
     &:hover &__title {
-        color: #FFFFFF;
+        color: $default-color;
     }
     
     &:hover &__icon {
@@ -95,7 +95,7 @@
     }
 
     &__item {
-        font-family: Montserrat, Courier;
+        font-family: $montserrat-font;
         font-weight: 700;
         font-size: 16px;
         color: $brand-color;
@@ -105,7 +105,7 @@
 
         @media screen and (min-width: 320px) and (max-width: 480px) {
             font-size: 19px;
-            color: #FFFFFF;
+            color: $default-color;
             font-weight: 400;
             margin-left: 0;
             padding: 30px 50px 30px 30px;
@@ -121,7 +121,7 @@
         }
 
         &:hover {
-            color: #FFFFFF;
+            color: $default-color;
         }
     }
 
@@ -181,7 +181,7 @@
 
 .subtitle {
     margin-top: 18px;
-    font-family: Montserrat, Courier;
+    font-family: $montserrat-font;
     font-weight: 400;
     font-size: 22px;
     color: $brand-color;
@@ -198,7 +198,7 @@
 
 .description {
     margin-top: 18px;
-    font-family: Montserrat, Courier;
+    font-family: $montserrat-font;
     font-weight: 400;
     font-size: 12px;
     text-transform: uppercase;
@@ -217,7 +217,7 @@
 
     &__description {
         margin-top: 19px;
-        font-family: Montserrat, Courier;
+        font-family: $montserrat-font;
         font-weight: 400;
         font-size: 14px;
         color: #848E97;
