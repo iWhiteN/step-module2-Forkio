@@ -3,12 +3,12 @@
     padding: 30px 0;
     background-color: #27262A;
 
-    @media screen and (min-width: 320px) and (max-width: 480px) {
+    @include for-phone-only {
         padding: 31px 0;
         position: relative;
     }
 
-    @media screen and (min-width: 481px) and (max-width: 992px) {
+    @include for-tablet-only {
         padding: 20px 0;
     }
     
@@ -17,7 +17,7 @@
         justify-content: space-between;
         align-items: center;
 
-        @media screen and (min-width: 481px) and (max-width: 992px) {
+        @include for-tablet-only {
             flex-wrap: wrap;
         }
     }
@@ -29,11 +29,11 @@
     text-decoration: none;
     justify-self: flex-start;
 
-    @media screen and (min-width: 320px) and (max-width: 480px) {
+    @include for-phone-only {
         order: -2;
     }
 
-    @media screen and (min-width: 481px) and (max-width: 992px) {
+    @include for-tablet-only {
         order: -2;
     }
     
@@ -46,7 +46,7 @@
         margin-left: 17px;
         transition: .2s;
 
-        @media screen and (min-width: 320px) and (max-width: 480px) {
+        @include for-phone-only {
             display: none;
         }
     }
@@ -67,19 +67,19 @@
 .menu {
     margin-left: auto;
 
-    @media screen and (min-width: 320px) and (max-width: 480px) {
+    @include for-phone-only {
         margin-left: 0;
         display: inline-block;
     }
 
-    @media screen and (min-width: 481px) and (max-width: 992px) {
+    @include for-tablet-only {
         margin-top: 32px;
         width: 100%;
         text-align: center;
     }
 
     &__items {
-        @media screen and (min-width: 320px) and (max-width: 480px) {
+        @include for-phone-only {
             display: none;
         }
 
@@ -103,7 +103,7 @@
         text-decoration: none;
         transition: .2s;
 
-        @media screen and (min-width: 320px) and (max-width: 480px) {
+        @include for-phone-only {
             font-size: 19px;
             color: $default-color;
             font-weight: 400;
@@ -128,7 +128,7 @@
     &__btn-mobile {
         display: none;
 
-        @media screen and (min-width: 320px) and (max-width: 480px) {
+        @include for-phone-only {
             display: inline-block;
             filter:brightness(400%);
         }
@@ -138,12 +138,12 @@
 .buy-button {
     margin-left: 48px;
 
-    @media screen and (min-width: 320px) and (max-width: 480px) {
+    @include for-phone-only {
         margin-left: 0;
         order: -1;
     }
     
-    @media screen and (min-width: 481px) and (max-width: 992px) {
+    @include for-tablet-only {
         order: -1;
     }
 }
@@ -158,22 +158,22 @@
     text-align: center;
     position: relative;
 
-    @media screen and (min-width: 481px) and (max-width: 992px) {
+    @include for-phone-only {
         padding-top: 43px;
     }
 
-    @media screen and (min-width: 481px) and (max-width: 992px) {
+    @include for-tablet-only {
         padding-top: 50px;
     }
 
     &__title {
         font-size: 60px;
 
-        @media screen and (min-width: 320px) and (max-width: 480px) {
+        @include for-phone-only {
             font-size: 35px;
         }
         
-        @media screen and (min-width: 481px) and (max-width: 992px) {
+        @include for-tablet-only {
             font-size: 53px;
         }
     }
@@ -185,12 +185,12 @@
     font-weight: 400;
     font-size: 22px;
     color: $brand-color;
-    @media screen and (min-width: 320px) and (max-width: 480px) {
+    @include for-phone-only {
         margin-top: 20px;
         font-size: 13px;
     }
     
-    @media screen and (min-width: 481px) and (max-width: 992px) {
+    @include for-tablet-only {
         margin-top: 26px;
         font-size: 18px;
     }
@@ -203,7 +203,7 @@
     font-size: 12px;
     text-transform: uppercase;
     color: #848E97;
-    @media screen and (min-width: 481px) and (max-width: 992px) {
+    @include for-tablet-only {
         margin-top: 20px;
         font-size: 10px;
     }
@@ -222,7 +222,7 @@
         font-size: 14px;
         color: #848E97;
 
-        @media screen and (min-width: 320px) and (max-width: 480px) {
+        @include for-phone-only {
             margin-top: 13px;
         }
     }
@@ -231,7 +231,7 @@
 .download-button {
     padding: 23px 63px;
 
-    @media screen and (min-width: 320px) and (max-width: 480px) {
+    @include for-phone-only {
         padding: 15px 30px;
     }
 }
