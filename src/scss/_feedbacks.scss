@@ -34,6 +34,18 @@
     }
 }
 
+.feedbacks-title {
+    font-size: 35px;
+   
+    @include for-tablet-max {
+        font-size: 31px;
+   }
+
+    @include for-phone-max {
+        font-size: 26px; 
+    }
+}
+
 .feedbacks-items {
     margin: 85px 0 85px;
     display: grid;
