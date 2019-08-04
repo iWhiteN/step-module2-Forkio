@@ -101,7 +101,8 @@
         transition: .2s;
 
         @include for-tablet-max {
-            font-size: 12px;
+            font-size: 14px;
+            margin-left: 40px;
         }
 
         @include for-phone-max {
@@ -144,6 +145,7 @@
     }
 
     @include for-phone-max {
+        font-size: 15px;
         margin-left: 0;
     }
 }
@@ -212,7 +214,6 @@
 
     @include for-phone-max {
         margin-top: 18px;
-        font-size: 12px;
     }
 }
 
@@ -236,9 +237,11 @@
 }
 
 .download-button {
+    font-size: 15px;
     padding: 23px 63px;
 
     @include for-phone-max {
+        font-size: 16px;
         padding: 15px 30px;
     }
 }
