@@ -15,6 +15,7 @@
 			flex-wrap: nowrap;
 			max-height: none;
 			padding-top: 35px;
+			min-width: 300px;
 		}
 		@include for-tablet-max {
 			align-items: center;
@@ -36,7 +37,6 @@
 		}
 		
 		@include for-phone-max {
-			min-width: 320px;
 			order: 0;
 			max-width: 320px;
 		}
@@ -96,7 +96,7 @@
 
 		@include for-phone-max {
 			line-height: 1;
-			font-size: 23px;
+			font-size: 20px;
 		}
 	}
 
@@ -108,11 +108,12 @@
 		@include for-tablet-max{
 			order: 1;
 			position: static;
-			margin-left: 365px;
+			margin-right: -50%;
 		}
 
 		@include for-phone-max {
 			height: 380px;
+			margin-left: 75%;
 		}
 	}
 }
