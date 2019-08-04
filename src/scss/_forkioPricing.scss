@@ -1,4 +1,4 @@
-.forkioPricing{
+.forkio-pricing{
 	background-image: url("../img/pricing-bg.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -26,7 +26,6 @@
 		@include for-tablet-max {
         	font-size: 40px;
         	margin: 0 auto 50px;
-        	min-width: 572px;
     	}
 
 		@include for-phone-max {
@@ -80,7 +79,7 @@
 				font-size: 55px;
 				font-weight: 700;
 			}
-			h3{
+			&__time{
 				color: #8c7d86;
 				font-size: 14px;
 				margin: 25px 0 40px;
@@ -91,7 +90,7 @@
 				background-color: $brand-color;
 				margin: 0 auto 30px;
 			}
-			h2{
+			&__privilege{
 				text-transform: none;
 				margin-top: 15px;
 			}
@@ -130,7 +129,7 @@
 			&__cost{
 				font-size: 75px;
 			}
-			h3{
+			&__time{
 				margin-bottom: 50px;
 			}
 			&__line{

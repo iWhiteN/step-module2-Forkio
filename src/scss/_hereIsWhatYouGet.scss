@@ -1,5 +1,6 @@
-.hereIsWhatYouGet{
+.here-is-what-you-get{
 	background-color: #f4f4f4;
+	overflow: hidden;
 
 	&__wrapper{
 		font-family: $montserrat-font;
@@ -14,14 +15,13 @@
 			flex-wrap: nowrap;
 			max-height: none;
 			padding-top: 35px;
-			overflow: hidden;
 		}
 		@include for-tablet-max {
 			align-items: center;
 			flex-wrap: nowrap;
 			max-height: none;
 			padding-top: 55px;
-			overflow: hidden;
+			
 		}
 	}
 
@@ -68,11 +68,12 @@
 
 			&__main{
 				width: 75%;
-				h2{
+
+				&__title{
 					font-size: 14px;
 					margin-bottom: 20px;
 				}
-				h3{
+				&__text{
 					font-size: 12px;
 					color: #939ca3;
 					line-height: 25px;

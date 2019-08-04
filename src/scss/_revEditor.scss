@@ -1,4 +1,4 @@
-.revEditor{
+.rev-editor{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -52,7 +52,7 @@
 			justify-content: center;
 		}
 
-		li{
+		&__button{
 			margin-right: 10px;
 		}
 	}
