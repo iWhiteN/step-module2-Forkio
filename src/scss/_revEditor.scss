@@ -14,6 +14,7 @@
 
 	@include for-phone-max {
 		padding-bottom: 90px;
+		min-width: 	300px;
 	}
 	
 	&__title{
@@ -27,7 +28,7 @@
 		}
 
 		@include for-phone-max {
-			font-size: 40px;
+			font-size: 35px;
 		}
 	}
 	&__subtitle{

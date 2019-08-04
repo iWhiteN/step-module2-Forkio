@@ -19,6 +19,7 @@
 
         @include for-tablet-max {
             flex-wrap: wrap;
+            min-width: 300px;
         }
     }
 }
