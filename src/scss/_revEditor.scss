@@ -24,11 +24,11 @@
 		margin-bottom: 40px;
 
 		@include for-tablet-max {
-			font-size: 45px;
+			font-size: 40px;
 		}
 
 		@include for-phone-max {
-			font-size: 35px;
+			font-size: 25px;
 		}
 	}
 	&__subtitle{

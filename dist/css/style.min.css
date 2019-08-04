@@ -582,10 +582,10 @@ textarea {
     margin-bottom: 40px; }
     @media screen and (max-width: 992px) {
       .rev-editor__title {
-        font-size: 45px; } }
+        font-size: 40px; } }
     @media screen and (max-width: 480px) {
       .rev-editor__title {
-        font-size: 35px; } }
+        font-size: 25px; } }
   .rev-editor__subtitle {
     color: #5b5b5b;
     font-size: 20px;
@@ -677,12 +677,12 @@ textarea {
       .here-is-what-you-get .title {
         order: -1;
         padding-top: 0;
-        font-size: 30px;
+        font-size: 40px;
         text-align: center; } }
     @media screen and (max-width: 480px) {
       .here-is-what-you-get .title {
         line-height: 1;
-        font-size: 20px; } }
+        font-size: 30px; } }
   .here-is-what-you-get__img {
     position: absolute;
     bottom: 40px;
@@ -691,11 +691,11 @@ textarea {
       .here-is-what-you-get__img {
         order: 1;
         position: static;
-        margin-right: -50%; } }
+        margin-left: 50%; } }
     @media screen and (max-width: 480px) {
       .here-is-what-you-get__img {
         height: 380px;
-        margin-left: 75%; } }
+        margin-left: 120%; } }
 
 .feedbacks {
   padding-top: 98px;
@@ -814,7 +814,7 @@ textarea {
     @media screen and (max-width: 480px) {
       .forkio-pricing__title {
         min-width: auto;
-        font-size: 26px;
+        font-size: 30px;
         line-height: 1; } }
   .forkio-pricing__prices {
     display: flex;

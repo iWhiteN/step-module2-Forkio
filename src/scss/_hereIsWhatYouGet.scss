@@ -90,13 +90,13 @@
 		@include for-tablet-max {
 			order: -1;
 			padding-top: 0;
-			font-size: 30px;
+			font-size: 40px;
 			text-align: center;
 		}
 
 		@include for-phone-max {
 			line-height: 1;
-			font-size: 20px;
+			font-size: 30px;
 		}
 	}
 
@@ -108,12 +108,12 @@
 		@include for-tablet-max{
 			order: 1;
 			position: static;
-			margin-right: -50%;
+			margin-left: 50%;
 		}
 
 		@include for-phone-max {
 			height: 380px;
-			margin-left: 75%;
+			margin-left: 120%;
 		}
 	}
 }
