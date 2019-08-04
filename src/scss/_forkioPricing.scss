@@ -1,4 +1,5 @@
-.forkio-pricing{
+.forkio-pricing {
+	min-width: $min-width;
 	background-image: url("../img/pricing-bg.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -19,7 +20,7 @@
 		padding-bottom: 90px;
     }
 
-	&__title{
+	&__title {
 		font-size: 46px;
 		margin: 0 auto 70px;
 		
@@ -34,7 +35,7 @@
 			line-height: 1;
     	}
 	}
-	&__prices{
+	&__prices {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -53,7 +54,7 @@
 			justify-content: space-between;
        	}
 
-		.price-card{
+		.price-card {
 			min-width: 257px;
 			background-color: rgba(250,250,250, 0.1);
 			box-shadow: inset 0px 100px 1px rgba(250,250,250, 0.1);
@@ -70,37 +71,42 @@
         		margin-bottom: 15px;
        		}
 
-			&__name{
+			&__name {
 				margin-bottom: 65px;
 				font-size: 22px;
 			}
 
-			&__cost{
+			&__cost {
 				font-size: 55px;
 				font-weight: 700;
 			}
-			&__time{
+
+			&__time {
 				color: #8c7d86;
 				font-size: 14px;
 				margin: 25px 0 40px;
 			}
-			&__line{
+
+			&__line {
 				width: 60px;
 				height: 5px;
 				background-color: $brand-color;
 				margin: 0 auto 30px;
 			}
-			&__privilege{
+			
+			&__privilege {
 				text-transform: none;
 				margin-top: 15px;
 			}
-			&__button{
+
+			&__button {
 				margin-top: 37px;
 				font-size: 14px;
 				padding: 15px 37px;
 				background-color: #7f707f;
 			}
-			&__button:hover{
+
+			&__button:hover {
 				background-color: #d0cbd0;
 				color: #7f6d78;
 				font-weight: 700;
@@ -111,11 +117,11 @@
 				}
 			}
 
-			.first{
+			.first {
 				margin: 68px auto auto;
 			}	
 		}
-		.active{
+		.active {
 			min-width: 300px;
 			height: 560px;
 			padding: 50px 0 50px;
@@ -123,19 +129,23 @@
 			box-shadow: inset 0px 100px 1px rgba(0,0,0, 0.1);
 			color: #e3e3e3;
 
-			&__name{
+			&__name {
 				margin-bottom: 60px;
 			}
-			&__cost{
+
+			&__cost {
 				font-size: 75px;
 			}
-			&__time{
+
+			&__time {
 				margin-bottom: 50px;
 			}
-			&__line{
+
+			&__line {
 				margin-bottom: 40px;
 			}
-			&__button{
+
+			&__button {
 				margin-top: 82px;
 				padding: 20px 50px;
 			}

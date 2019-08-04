@@ -1,8 +1,9 @@
-.here-is-what-you-get{
+.here-is-what-you-get {
+	min-width: $min-width;
 	background-color: #f4f4f4;
 	overflow: hidden;
 
-	&__wrapper{
+	&__wrapper {
 		font-family: $montserrat-font;
 		display: flex;
 		flex-direction: column;
@@ -10,23 +11,20 @@
 		flex-wrap: wrap;
 		position: relative;
 
-		@include for-phone-max {
-			align-items: center;
-			flex-wrap: nowrap;
-			max-height: none;
-			padding-top: 35px;
-			min-width: 300px;
-		}
 		@include for-tablet-max {
 			align-items: center;
 			flex-wrap: nowrap;
 			max-height: none;
 			padding-top: 55px;
-			
+		}
+
+		@include for-phone-max {
+			padding-top: 35px;
+			min-width: 300px;
 		}
 	}
 
-	.features{
+	.features {
 		max-width: 500px;
 		min-width: 320px;
 		padding: 50px 0 70px;
@@ -41,12 +39,12 @@
 			max-width: 320px;
 		}
 
-		.block{
+		.block {
 			margin-top: 35px;
 			display: flex;
 			justify-content: space-between;
 
-			@include for-tablet-max{
+			@include for-tablet-max {
 				min-width: 100%;
 			}
 			
@@ -58,22 +56,23 @@
 				justify-content: center;
 			}
 
-			&__img{
+			&__img {
 				width: 20%;
 
-				@include for-phone-max{
+				@include for-phone-max {
 					margin-bottom: 25px;
 				}
 			}
 
-			&__main{
+			&__main {
 				width: 75%;
 
-				&__title{
+				&__title {
 					font-size: 14px;
 					margin-bottom: 20px;
 				}
-				&__text{
+
+				&__text {
 					font-size: 12px;
 					color: #939ca3;
 					line-height: 25px;
@@ -82,7 +81,7 @@
 		}
 	}
 
-	.title{
+	.title {
 		padding-top: 65px;
 		color: $brand-color;
 		text-transform: uppercase;
@@ -100,12 +99,12 @@
 		}
 	}
 
-	&__img{
+	&__img {
 		position: absolute;
 		bottom: 40px;
 		left: 580px;
 
-		@include for-tablet-max{
+		@include for-tablet-max {
 			order: 1;
 			position: static;
 			margin-left: 50%;
